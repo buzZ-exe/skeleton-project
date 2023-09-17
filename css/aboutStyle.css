@@ -94,7 +94,6 @@ header {
     background-color: rgb(255, 246, 244, 0.01);  
     position: absolute;
     padding: 0px 20px 20px 20px;
-    backdrop-filter: blur(2px);
     border-radius: 10px;
     top: 115px;
     width: 100%;

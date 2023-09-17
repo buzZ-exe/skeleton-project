@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/ContactIMG.jpg');
+    background-color: #fdab6c;  
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.title
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFF6F4;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 185px;
+    margin: 0;
+    height: 5px;
+    background: #FFA41B;
+    width: 22%;
+}
+
+.title-info
+{
+    color: #FFF6F4;
+    padding-bottom: 50px;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2%;
+}
+
+.input-group, .textarea-group
+{
+    padding: 1% 0;
+}
+
+input, textarea
+{
+    color: #FFF6F4;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #FFF6F4;
+    padding: 1.5%;
+    font-size: 20px;
+    transition: .25s;
+}
+
+input:focus, textarea:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 3px solid #FFA41B;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: transparent;
+}
+
+label
+{
+    font-size: 1.3em;
+    color: #FFF6F4;
+    position: relative;
+    left: 0.5em;
+    top: -3em;
+	cursor: auto;
+    transition: 0.25s;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label
+{
+    top: -5em;
+    color: #FFA41B;
+    font-size: 15px;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+{
+    top: -13.5em;
+    color: #fd903d;
+    font-size: 15px;
+}
+
+.button-div
+{
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    padding: 2%;
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #ffa41bf1;
+    color: #FFF6F4;
+    transition: .25s;
+}
+
+button:hover
+{
+    background-color: #c57600;  
+    cursor: pointer;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    color: #FFF6F4;
+    font-size: 2em;
+    text-decoration: none;
+    user-select: none;
+}
+
+.navigation a {
+    color: #fff;
+    position: relative;
+    margin-left: 20px ;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.loginBtn {
+    color: #FFF6F4;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #FFF6F4;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.loginBtn:hover {
+    background: #FFF6F4;
+    color: #FFA41B;
+    transform: scale(1.05);
+
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #FFF6F4;
+    transform: scaleX(0);
+    transition: .25s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .nono:hover::after {
+    transform: scaleX(0);
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    padding: 120px 0px 0px 0px;
+    width: 100%;
+    font-family: "poppins", sans-serif;
+}
