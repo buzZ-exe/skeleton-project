@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/webIMG.jpg');
+    background-color: #fdab6c;  
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    color: #FFF6F4;
+    font-size: 2em;
+    text-decoration: none;
+    user-select: none;
+}
+
+.navigation a {
+    color: #fff;
+    position: relative;
+    margin-left: 20px ;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.loginBtn {
+    color: #FFF6F4;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #FFF6F4;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.loginBtn:hover {
+    background: #FFF6F4;
+    color: #FFA41B;
+    transform: scale(1.05);
+
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #FFF6F4;
+    transform: scaleX(0);
+    transition: .25s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .nono:hover::after {
+    transform: scaleX(0);
+}
+
+.headText {
+    position:relative;
+    top: 175px;
+    left: 180px;
+
+    width: 100%;
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.part {
+    flex-basis: 50%;
+}
+
+.part h1 {
+    color: #FFF6F4;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px black;
+}
+
+.part p {
+    color: #FFF6F4;
+    text-shadow: 1px 1px 1px black;
+}
+
+#mainText {
+    position: absolute;
+    display:flexbox;
+    justify-content: center;
+    align-items: left;
+    width: 70%;
+    height: 80%;
+    top: 700px;
+
+    color: #FFF6F4;
+}
+
+#mainText h1 {
+    text-shadow: 2px 2px 2px black;
+    font-size: 3em;
+}
+
+#mainText p {
+    text-shadow: 1px 1px 1px black;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 1s;
+    filter: blur(5px);
+    transform: translateX(-50%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
